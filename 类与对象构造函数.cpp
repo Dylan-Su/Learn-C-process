@@ -1,15 +1,16 @@
+//æ„é€ å‡½æ•°çš„ä½œç”¨å°±æ˜¯åœ¨å¯¹è±¡è¢«åˆ›å»ºçš„æ—¶å€™åˆ©ç”¨ç‰¹å®šçš„å€¼æ„é€ å¯¹è±¡ï¼Œå°†å¯¹è±¡åˆå§‹åŒ–ä¸ºä¸€ä¸ªç‰¹å®šçš„çŠ¶æ€ã€‚ã€‚ã€‚ã€‚
 #include <iostream>
 using namespace std;
-class Clock                                  //¶¨ÒåClockÀà
+class Clock                                  //å®šä¹‰Clockç±»
 {
 public:
-	Clock(int newH, int newM, int newS);    //¹¹Ôìº¯Êı
+	Clock(int newH, int newM, int newS);    //æ„é€ å‡½æ•°
 	void setTime(int newH ,int newM ,int newS);
 	void showTime();
 private:
 	int hour,minute,second;
 };
-//¶¨Òå³ÉÔ±º¯Êı
+//å®šä¹‰æˆå‘˜å‡½æ•°
 void Clock::setTime(int newH,int newM,int newS) {
 	hour = newH;
 	minute = newM;
@@ -18,15 +19,15 @@ void Clock::setTime(int newH,int newM,int newS) {
 inline void Clock::showTime() {
 	cout << hour << ":" << minute << ":" << second << endl;
 }
-//¹¹Ôìº¯ÊıµÄÊµÏÖ
+//æ„é€ å‡½æ•°çš„å®ç°
 Clock::Clock(int newH, int newM, int newS) {
 	hour = newH;
 	minute = newM;
 	second = newS;
 }
-//Ö÷º¯Êı
+//ä¸»å‡½æ•°
 int main() {
-	Clock c(0,0,0);//¶¨Òå¹ı¹¹Ôìº¯ÊıÖ®ºó¾Í¿ÉÒÔ¶¨Òå¶ÔÏóÊ±Ö±½Ó¸³Óè¶ÔÏó³õÖµ£»
+	Clock c(0,0,0);//å®šä¹‰è¿‡æ„é€ å‡½æ•°ä¹‹åå°±å¯ä»¥å®šä¹‰å¯¹è±¡æ—¶ç›´æ¥èµ‹äºˆå¯¹è±¡åˆå€¼ï¼›
 	c.showTime();
 	c.setTime(8, 30, 30);
 	c.showTime();
